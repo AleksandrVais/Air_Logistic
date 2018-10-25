@@ -1,0 +1,90 @@
+/* FONTS */
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+	font-family: 'MADEEvolve';
+	src: url(../fonts/MADEEvolve-Sans-Light.otf);
+}
+
+/* SHADOWS */
+.top_shadow {
+	height: 50px;
+	background: linear-gradient(to top, #85c5f3, #fff)
+}
+/* HEADER */
+
+header {
+	width: 1000px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+.logo {
+	margin-left: 20px;
+}
+nav>ul {
+	display: flex;
+	justify-content: space-around;
+}
+nav>ul>li {
+	display: flex;
+	align-items: center;
+	height: 100px;
+	padding:0 30px;
+}
+nav>ul>li:hover {
+	background-color: #cde6f9;
+}
+nav a {
+	text-decoration: none;
+	font-family: 'MyriadPro';
+	font-size: 1.2em;
+	color: #000;
+}
+
+/* MAIN PAGE */
+
+.main_page {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 100px);
+	min-height: 550px;
+	background: url(../img/copter.png) no-repeat center left;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+} 
+.main_page figure {
+	width: 350px;
+	margin-right: 150px;
+}
+
+.main_page figure h2 {
+	font-family: 'MADEEvolve';
+	font-size: 2em;
+	text-align: center;
+	line-height: 1.5em;
+}
+.main_button_more {
+	width: 250px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px auto 0;
+	background-color: #cde6f9;
+}
+.main_page a {
+	text-decoration: none;
+}
+.main_button_more p {
+	font-family: 'MADEEvolve';
+	font-size: 1.5em;
+	color: #4e4e4e;
+}
