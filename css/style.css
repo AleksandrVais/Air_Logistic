@@ -39,7 +39,7 @@ nav>ul>li {
 	padding:0 30px;
 }
 nav>ul>li:hover {
-	background-color: #cde6f9;
+	background: linear-gradient(to bottom, #cde6f9, #fff);
 }
 nav a {
 	text-decoration: none;
@@ -79,6 +79,7 @@ nav a {
 	align-items: center;
 	margin: 50px auto 0;
 	background-color: #cde6f9;
+	transition: 0.2s ease;
 }
 .main_page a {
 	text-decoration: none;
@@ -88,3 +89,24 @@ nav a {
 	font-size: 1.5em;
 	color: #4e4e4e;
 }
+.main_button_more:hover {
+	border-radius: 20px;
+	background-color: #b6dbf6;
+}
+.arrow_down {
+	position: absolute;
+	bottom: 30px;
+	right: calc(100vw - (50vw + 40px));
+	animation: jump 0.9s infinite ease-in-out;
+}
+.arrow_down img {
+	width: 80px;
+	
+}
+@keyframes jump {
+	50%{bottom: 0px;}
+	100%{bottom: 30px;}
+}
+
+/* ADVANTAGE */
+
