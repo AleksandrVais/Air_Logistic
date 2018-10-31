@@ -10,15 +10,23 @@
 	src: url(../fonts/MADEEvolve-Sans-Light.otf);
 }
 
-/* SHADOWS */
-.top_shadow {
+/* SHADOW */
+
+.top_shadow{
+	width: 100%;
 	height: 50px;
-	background: linear-gradient(to top, #85c5f3, #fff)
+	background: linear-gradient(to bottom, #fff, #85c5f3);
 }
+.bottom_shadow{
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(to top, #fff, #85c5f3);
+}
+
 /* HEADER */
 
 header {
-	width: 1000px;
+	width: 80%;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
@@ -39,7 +47,7 @@ nav>ul>li {
 	padding:0 30px;
 }
 nav>ul>li:hover {
-	background: linear-gradient(to bottom, #cde6f9, #fff);
+	background: linear-gradient(to bottom, #85c5f3, #fff);
 }
 nav a {
 	text-decoration: none;
@@ -62,7 +70,7 @@ nav a {
 } 
 .main_page figure {
 	width: 350px;
-	margin-right: 150px;
+	margin-right: 10%;
 }
 
 .main_page figure h2 {
@@ -110,3 +118,163 @@ nav a {
 
 /* ADVANTAGE */
 
+.advantage {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: 0 auto;
+}
+.advantage section{
+	width: 350px;
+}
+.advantage_discriptions{
+	width: auto;
+	height: auto;
+	font-family: 'MADEEvolve';
+	text-align: center;
+}
+.advantage_discriptions h2{
+	font-size: 1.5em;
+	padding: 40px 0 20px;
+	line-height: 1.5em;
+}
+.advantage_discriptions p {
+	font-size: 1.4em;
+	padding: 40px 20px;
+}
+.line_adv {
+	display: block;
+	width: 250px;
+	height: 4px;
+	background-color: #85c5f3;
+	margin: 0 auto;
+}
+.button_adv{
+	width: 150px;
+	height: 50px;
+	background-color: #85c5f3;
+	margin: 0 auto 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s ease;
+}
+.button_adv:hover {
+	border-radius: 20px;
+
+}
+.advantage_discriptions a {
+	text-decoration: none;
+	color: #000000;
+}
+.advantage img{
+	width: 350px;
+	height: 400px;
+}
+
+/* DELIVERY CARGO */
+
+.delivery_cargo {
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+.delivery_cargo h2 {
+	font-family: 'MADEEvolve';
+	font-size: 1.8em;
+	text-align: center;
+	margin-top: 20px;
+}
+.delivery_cargo table{
+	width: 800px;
+	margin: 100px auto;
+	font-family: 'MADEEvolve';
+	font-size: 1.6em;
+
+}
+.delivery_cargo table td{
+	height: 80px;
+	width: 100px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+.table_color_blue{
+	background-color: #85c5f3;
+}
+.car,
+.build,
+.copter,
+.parashute {
+	position: absolute;
+}
+
+.car {
+	left: -30px;
+	bottom: 5px;
+}
+.build {
+	right: 10px;
+	bottom: 25px;
+}
+.copter {
+	left: -80px;
+	top: 60px;
+}
+.parashute {
+	top: -40px;
+	right: -10px;
+}
+
+/* ADVENTAGES DRONES DELIVERY */
+.advenages_drones_delivery {
+	margin: 60px auto 100px;
+}
+.advenages_drones_delivery h2{
+	font-family: 'MADEEvolve';
+	font-size: 1.8em;
+	text-align: center;
+}
+.add_images {
+	width: 900px;
+	margin: 20px auto;
+	padding-left: 150px;
+}
+.add_images>div{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 125px;
+}
+.add_item {
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: relative;
+	font-family: 'MADEEvolve';
+	font-size: 1.2em;
+}
+.add_item span{
+	font-size: 1.6em;
+}
+.add_images_first_block> div:first-child::before {
+	content: url(../img/sequre.jpg);
+	position: absolute;
+	left: -120px;
+}
+.add_images_first_block> div:last-child::before {
+	content: url(../img/spead.jpg);
+	position: absolute;
+	left: -150px;
+}
+.add_images_last_block> div:first-child::before {
+	content: url(../img/money.jpg);
+	position: absolute;
+	left: -120px;
+}
+.add_images_last_block> div:last-child::before {
+	content: url(../img/ecology.jpg);
+	position: absolute;
+	left: -150px;
+}
