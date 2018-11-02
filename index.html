@@ -2,13 +2,15 @@
 <html lang="RU">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Air Logistic - инновационная доставка грузов</title>
+	<link rel="shortcut icon" href="img/logo_ico.png" type="image/png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/Slick/slick.css">
 	<link rel="stylesheet" href="css/Slick/slick-theme.css">
 </head>
-<body>
+<body id="top_page">
 
 	<header id="fixed_menu" class="fixed_top_menu">
 
@@ -16,17 +18,17 @@
 			<img src="img/logo.png" alt="logo">
 		</div>
 		<nav>
-			<ul>
-			<li><a href="#">Главная</a></li>
-			<li><a href="#">Партнеры</a></li>
-			<li><a href="#">О нас</a></li>
-			<li><a href="#">Блог</a></li>
-			<li><a href="#">Контакты</a></li>
+			<ul class="nav">
+			<a href="#top_page"><li>Главная</li></a>
+			<a href="#about_us"><li>О нас</li></a>
+			<a href="#how_it_work"><li>Как это работает</li></a>
+			<a href="#partners"><li>Партнеры</li></a>
+			<a href="#contacts"><li>Контакты</li></a>
 		</ul>
 		</nav>
 		
 	</header>
-
+	<div class="under_nav_space"></div>
 	<section class="main_page">
 		
 		<figure>
@@ -42,10 +44,9 @@
 		<img src="img/arrow1.png" alt="arrow">
 	</div>
 	</section>
-	
 	<div class="top_shadow"></div>
 
-	<section class="advantage">
+	<section class="advantage" id="about_us">
 		<section>
 			<div class="adv_img">
 				<img src="img/drone_1.jpg" alt="Drones" id="drones">
@@ -82,7 +83,7 @@
 		</section>
 	</section>
 	
-	<div class="bottom_shadow"></div>
+	<div class="bottom_shadow" id="how_it_work"></div>
 
 	<section class="delivery_cargo">
 		<h2>ДОСТАВКА ГРУЗА В ЛЮБУЮ ТОЧКУ ГОРОДА</h2>
@@ -136,9 +137,8 @@
 				</div>
 			</div>
 		</section>
-	</section>
-	
-	<div class="bottom_shadow"></div>
+	</section>	
+	<div class="bottom_shadow" id="partners"></div>
 
 	<section class="reviews">
 		<h2>ОТЗЫВЫ О НАС</h2>
@@ -202,12 +202,12 @@
 	<footer>
 		<div class="footer_area">
 			<div>
-				<ul class="footer_links">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Партнеры</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Блог</a></li>
-					<li><a href="#">Контакты</a></li>
+				<ul class="footer_links nav">
+					<li><a href="#top_page">Главная</a></li>
+					<li><a href="#about_us">О нас</a></li>
+					<li><a href="#how_it_work">Как это работает</a></li>
+					<li><a href="#partners">Партнеры</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 				<div class="sotcial">
 					<a href="https://facebook.com" target="_blank"><img src="img/social/facebook.png" alt="FaceBook"></a>
@@ -217,7 +217,7 @@
 				</div>
 			</div>
 
-			<div class="contacts"><p>
+			<div class="contacts" id="contacts"><p>
 				<span>Air Logistic Corp</span> <br>
 				<span>Республика Беларусь, г. Минск, пр-т.</span> <br>
 				<span>Победителей 103, оф. 1003</span> <br>
