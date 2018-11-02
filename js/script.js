@@ -15,6 +15,17 @@
 	  slidesToScroll: 0,
 	  asNavFor: '.rev_slider',
 	  centerMode: true,
-	  focusOnSelect: true
+	  focusOnSelect: true,
+	  autoplay: true,
+	  adaptiveHeight: true
 });
+
+  $('#fixed_menu').removeClass('fixed_top_menu');
+  		$(window).scroll(function(){
+  			if ($(this).scrollTop()>10){
+  				$('#fixed_menu').addClass('fixed_top_menu').fadeIn('fast');
+  			} else {
+  				$('#fixed_menu').removeClass('fixed_top_menu').fadeIn('fast');
+  			}
+  		})
 }); 
