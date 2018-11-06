@@ -322,7 +322,7 @@ nav a {
 	display: block;
 	width: 180px;
 	height: auto;
-	margin: 15px 0;
+	margin: 15px auto;
 }
 .ad_del_cont_transfer>div {
 	margin: 0 auto;
@@ -634,6 +634,12 @@ footer {
 	.adaptive_drone {
 		display: block;
 	}
+	.ad_del_cont {
+		width: 100%;
+		margin: 0 auto;
+		flex-direction: column;
+		text-align: center;
+	}
 	.adaptive_drone img {
 		display: block;
 		margin: 0 auto;
@@ -720,5 +726,91 @@ footer {
 	    background-size: cover;
 		left: 310px;
 		top: -20px;
+	}
+	.rev_slider{
+		width: 400px;
+	}
+	.rev_slider_item{
+		display: block !important;
+		width: 400px;
+	}
+	.rev_slider img,
+	.rev_slider_item h3,
+	.rev_slider_item p{
+		display: block;
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+	.rev_slider_nav {
+		width: 340px;
+	}
+	div.slick-center img {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 530px){
+	.adaptive_drone img {
+		width: 100%;
+		height: auto;
+	}
+	.advantage section {
+		width: 100%;
+	}
+	.advantage img {
+		width: 100%;
+		height: auto;
+	}
+	.add_images_first_block> div:first-child {
+		margin-right: 0;
+		margit-bottom: 50px;
+	}
+	.add_images_first_block> div:last-child {
+		margin-left: 0;
+		margin-bottom: 50px;
+	}
+	.add_images_last_block> div:first-child {
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+	.add_images_last_block> div:last-child {
+		margin-left: 0; 
+	}
+	.top_shadow,
+	.bottom_shadow {
+		background: #fff;
+	}
+	.footer_area {
+		flex-direction: column;
+	} 
+	.rev_slider{
+		width: 300px;
+	}
+	.rev_slider_item{
+		display: block !important;
+		width: 300px;
+	}
+	.add_images_first_block> div:first-child::before {
+		width: 80px;
+	    height: 93px;
+	    left: -100px;
+	    top: -10px;
+	}
+	.add_images_first_block> div:last-child::before {
+		width: 100px;
+		height: 54px;
+		left: -110px;
+		top: 10px;
+	}
+	.add_images_last_block> div:first-child::before {
+		width: 80px;
+		height: 101px;
+		left: -100px;
+	    top: -20px;
+	}
+	.add_images_last_block> div:last-child::before {
+		width: 80px;
+		height: 108px;
+		left: -110px;
 	}
 }

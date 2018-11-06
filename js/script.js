@@ -1,6 +1,8 @@
 // Slick slider
 
 $(document).ready(function(){
+
+
   $('.rev_slider').slick({
     slidesToShow: 1,
   	slidesToScroll: 1,
@@ -9,7 +11,8 @@ $(document).ready(function(){
   	asNavFor: '.rev_slider_nav'
   });
 
-  $('.rev_slider_nav').slick({
+
+ 	$('.rev_slider_nav').slick({
   	  infinite: true,
   	  slidesToShow: 3,
   	  slidesToScroll: 0,
@@ -17,25 +20,33 @@ $(document).ready(function(){
   	  centerMode: true,
   	  focusOnSelect: true,
   	  autoplay: true,
-  	  arrows: true
+  	  arrows: true,
+  	  responsive: [
+  	  {
+  	   breakpoint: 950,
+  	   settings: {
+  	   	 slidesToShow: 1
+  	   }
+  	}
+  	  ]
     });
+ 
 
 // Top menu resize
 
-	$(window).resize(function() {
-  if(document.documentElement.clientWidth > 950) {
+	
     
   	  $('#fixed_menu').removeClass('fixed_top_menu');
   		$(window).scroll(function(){
-  			if ($(this).scrollTop()>1){
+  			if ($(this).scrollTop()>10){
   				$('#fixed_menu').addClass('fixed_top_menu');
   			} else {
   				$('#fixed_menu').removeClass('fixed_top_menu');
   			}
   })
 
-  }
-});
+ 
+
 
 // Adaptive top menu 
 
