@@ -221,8 +221,9 @@ nav a {
 .button_adv{
 	width: 150px;
 	height: 50px;
-	background-color: #85c5f3;
+	background-color: #cde6f9;
 	margin: 0 auto 30px;
+	color: #4e4e4e;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -230,7 +231,7 @@ nav a {
 }
 .button_adv:hover {
 	border-radius: 20px;
-
+	background-color: #b6dbf6;
 }
 .advantage_discriptions a {
 	text-decoration: none;
