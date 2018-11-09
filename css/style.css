@@ -3,11 +3,13 @@
 @font-face {
 	font-family: 'MyriadPro';
 	src: url(../fonts/MyriadPro-Regular.otf);
+	src: url(../fonts/MyriadPro-Regular.woff);
 }
 
 @font-face {
 	font-family: 'MADEEvolve';
 	src: url(../fonts/MADEEvolve-Sans-Light.otf);
+	src: url(../fonts/MADEEvolve-Sans-Light.woff)
 }
 
 /* SHADOW */
